@@ -2,10 +2,10 @@
 	font-family: Arial;
 }
 .box{
-	background-color: aqua;
 	font-size: 1.5em;
 }
 .box > .name{
+	background-color: aqua;
 	position: absolute;
 	padding: 1em 1em 1em 1em;
 }
