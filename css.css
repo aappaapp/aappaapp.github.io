@@ -15,3 +15,11 @@
 	height: 90%;
 	width: 50%;
 }
+@keyframes shadow{
+	from{
+		box-shadow: 0;
+	}
+	to{
+		box-shadow: 10px 10px 5px grey;
+	}
+}
