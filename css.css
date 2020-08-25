@@ -5,5 +5,9 @@
 	background-color: aqua;
 	font-size: 1.5em;
 	margin:;
-	width: 100%;
+	width: 1.5em;
+}
+.box > .name{
+	bottom: 0;
+	position: absolute;
 }
