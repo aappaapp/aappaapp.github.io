@@ -6,9 +6,14 @@
 	font-size: 1.5em;
 	margin:;
 	width: 50%;
-	height: 100%;
+	height: 90%;
 }
 .box > .name{
 	bottom: 0;
 	position: absolute;
+}
+.box:hover{
+	box-shadow: 10px 10px 5px grey;
+	height: 90%;
+	width: 50%;
 }
