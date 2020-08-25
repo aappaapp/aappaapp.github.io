@@ -4,9 +4,7 @@
 .box{
 	background-color: aqua;
 	font-size: 1.5em;
-	margin:;
-	width: 50%;
-	height: 90%;
+	padding: 0% 50% 0% 90%;
 }
 .box > .name{
 	bottom: 0;
