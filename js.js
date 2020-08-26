@@ -8,5 +8,5 @@ function loginPage(){
 }
 
 function bar(){
-	document.getElementById("bar").innerHTML = '';
+	document.getElementById("bar").innerHTML = 'Nav Bar';
 }
