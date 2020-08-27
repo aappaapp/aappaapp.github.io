@@ -1,15 +1,15 @@
 <html>
-    <head>
-        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-        <script>
-        firebase.initializeApp({
-            databaseURL: "https://XXXXX.firebaseio.com/"
-        });
+	<head>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+		<script>
+			firebase.initializeApp({
+				databaseURL: "https://XXXXX.firebaseio.com/"
+			});
 
-        const database = firebase.database();
-        </script>
-    </head>
-    <body>
-        <input value="save" onclick="database.ref('/').set({a:123});">
-    </body>
+			const database = firebase.database();
+		</script>
+	</head>
+	<body>
+		<input value="save" onclick="database.ref('/').set({a:123});">
+	</body>
 </html>
