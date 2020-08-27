@@ -7,7 +7,7 @@
 				projectId: 'adenpun-github-db'
 			});
 			var db = firebase.firestore();
-			function signup(username){
+			function signup(){
 				var ref = db.collection('fruit').doc('apple');
 				ref.set({
 					total: 500,
@@ -21,6 +21,6 @@
 	</head>
 	<body>
 		username: <input id="username">
-		<input type="button" value="button" onclick="signup(document.getElementById('username'));">
+		<input type="button" value="button" onclick="signup();">
 	</body>
 </html>
