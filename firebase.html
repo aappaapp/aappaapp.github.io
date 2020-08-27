@@ -7,18 +7,20 @@
 				projectId: 'adenpun-github-db'
 			});
 			var db = firebase.firestore();
-			var db = firebase.firestore();
-			var ref = db.collection('fruit').doc('apple');
-			ref.set({
-				total: 500,
-				good: 480,
-				sale: 330
-			}).then(() => {
-				console.log('set data successful');
-			});
+			function signup(username){
+				var ref = db.collection('fruit').doc('apple');
+				ref.set({
+					total: 500,
+					good: username,
+					sale: 330
+				}).then(() => {
+					console.log('set data successful');
+				});
+			}
 		</script>
 	</head>
 	<body>
-		test2
+		username: <input id="username">
+		<input type="button" value="btton" onclick"signup(document.getElementById('username'));">
 	</body>
 </html>
