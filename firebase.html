@@ -10,6 +10,7 @@
 		</script>
 	</head>
 	<body>
-		<input type="button" value="save" onclick="database.ref('/').set({a:123});">
+		Username: <input id="username">
+		<input type="button" value="save" onclick="database.ref('username').set({document.getElementById('username').value:nul});">
 	</body>
 </html>
