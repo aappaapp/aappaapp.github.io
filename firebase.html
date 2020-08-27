@@ -3,6 +3,10 @@
 		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
 		<script>
+			firebase.initializeApp({
+				projectId: 'adenpun-github-db'
+			});
+			var db = firebase.firestore();
 			var db = firebase.firestore();
 			var ref = db.collection('fruit').doc('apple');
 			ref.set({
@@ -15,6 +19,6 @@
 		</script>
 	</head>
 	<body>
-		
+		test2
 	</body>
 </html>
