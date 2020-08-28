@@ -1,1 +1,1 @@
-# [aappaapp.github.io](google.com) Wiki
+# [aappaapp.github.io](index.html) Wiki
