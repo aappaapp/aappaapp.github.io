@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<script>
+		var menu = [{
+			name: 'create',
+			img: 'images/create.png',
+			title: 'create button',
+			className : 'primary'
+			fun: function (data,event) {
+				say('i am add button')
+			}
+		}, {
+			name: 'update',
+			img: 'images/update.png',
+			title: 'update button',
+			fun: function (data,event) {
+				say('i am update button')
+			},
+			subMenu: [{
+				name: 'merge',
+				title: 'It will merge row',
+				fun: function (data,event) {
+					say('It will merge row')
+				}
+			}, {
+				name: 'replace',
+				subMenu: [{
+					name: 'replace top 100'
+				}, {
+					name: 'replace all'
+				}]
+			}]
+		}, {
+			name: 'delete',
+			img: 'images/create.png',
+			disable:true,
+			title: 'create button',
+			fun: function (data,event) {
+				say('i am add button')
+			},
+			submenu: [{
+				'name': 'soft delete',
+			}, {
+				'name': 'hard delete'
+			}]
+
+		}];
+	</script>
+	</head>
+	<body>
+		<ul class="contextMenu">
+			<li title="create button" onclick="doCreate()">
+				<img src="images/create.png" class="iw-mIcon" />Create</li>
+			<li title="update button" onclick="doUpdate()">
+				<img src="images/update.png" class="iw-mIcon" />Update
+				<ul>
+					<li onclick="doMerge()">Merge</li>
+					<li>Replace
+						<ul>
+							<li>Replace Top 100</li>
+							<li>Replace All</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li onclick="doDelete()">
+				<img src="images/delete.png" class="iw-mIcon" />Delete
+				<ul>
+					<li>Soft Delete</li>
+					<li>Hard Delete</li>
+				</ul>
+			</li>
+			<li class="iw-mDisable">Disabled</li>
+		</ul>
+	</body>
+	
+</html>
